@@ -11,7 +11,6 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y \
     gcc g++ gdb \
     make cmake \
-    git \
     doxygen \
     python3 python3-pip
 
@@ -23,6 +22,18 @@ RUN apt-get install -y \
     llvm clang-format clang-tidy \
     curl zip unzip tar \
     graphviz
+
+# Install commonly used Linux commands
+RUN apt-get install -y \
+    vim \
+    coreutils \
+    less \
+    nano \
+    net-tools \
+    iputils-ping \
+    wget \
+    tree \
+    htop
 
 # Clean up to reduce image size
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
