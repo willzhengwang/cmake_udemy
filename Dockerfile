@@ -21,7 +21,8 @@ RUN apt-get install -y \
     cppcheck \
     llvm clang-format clang-tidy \
     curl zip unzip tar \
-    graphviz
+    graphviz \
+    git
 
 # Install commonly used Linux commands
 RUN apt-get install -y \
