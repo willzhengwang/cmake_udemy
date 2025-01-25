@@ -20,7 +20,7 @@ docker run -it --name ubuntu-dev-container -v C:\Users\anais\cmake_udemy:/worksp
 If you need to re-enter the running container later, use:
 
 ```
-docker exec -it ubuntu-tools-container bash
+docker exec -it ubuntu-dev-container bash
 ```
 
 # Stop the Container
